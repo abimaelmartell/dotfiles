@@ -5,9 +5,8 @@ filetype plugin indent on
 syntax enable
 map <F2> :NERDTreeToggle<CR>
 color codeschool
-set guifont=Monaco:h12
 let g:NERDTreeWinPos = "right"
 set guioptions-=T " Removes top toolbar
 set guioptions-=r " Removes right hand scroll bar
 set go-=L " Removes left hand scroll bar
-
+let g:Powerline_symbols = 'fancy'
