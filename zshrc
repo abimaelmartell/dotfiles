@@ -5,7 +5,7 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="agnoster"
+ZSH_THEME="robbyrussell"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -33,5 +33,6 @@ plugins=(git rails ruby svn php github debian)
 
 source $ZSH/oh-my-zsh.sh
 
-# Customize to your needs...
-export PATH=/usr/local/heroku/bin:/home/abimael/.rvm/gems/ruby-1.9.3-p194/bin:/home/abimael/.rvm/gems/ruby-1.9.3-p194@global/bin:/home/abimael/.rvm/rubies/ruby-1.9.3-p194/bin:/home/abimael/.rvm/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/abimael/.rvm/bin
+# Rbenv
+eval "$(rbenv init -)"
+export PATH="$HOME/.rbenv/bin:$PATH"

@@ -1,12 +1,23 @@
-" Cargar los plugins con pathogen
+" Plugins init
 call pathogen#infect()
 syntax on
 filetype plugin indent on
 syntax enable
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+
+
+" Mappings
 map <F2> :NERDTreeToggle<CR>
+let g:ctrlp_map = '<c-t>'
+
+
+
+" Color, font and other goodies
 color codeschool
 let g:NERDTreeWinPos = "right"
-set guioptions-=T " Removes top toolbar
-set guioptions-=r " Removes right hand scroll bar
-set go-=L " Removes left hand scroll bar
+set guioptions-=T 
+set guioptions-=r
+set go-=L
 let g:Powerline_symbols = 'fancy'
+set nowrap " Stupid wordwrap
+set number " Lines pls
