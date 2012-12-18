@@ -7,13 +7,19 @@ set runtimepath^=~/.vim/bundle/ctrlp.vim
 
 
 " Mappings
-map <F2> :NERDTreeToggle<CR>
-let g:ctrlp_map = '<c-t>'
-
+let mapleader = ","
+map <leader>n :NERDTreeToggle<CR>
+let g:ctrlp_map = "<leader>p"
+map <leader>t :TagbarToggle<CR>
 
 
 " Color, font and other goodies
-color codeschool
+set background=dark
+if has("gui_running")
+	colorscheme codeschool
+else
+	colorscheme solarized
+endif
 let g:NERDTreeWinPos = "right"
 set guioptions-=T 
 set guioptions-=r

@@ -34,5 +34,5 @@ plugins=(git rails ruby svn php github debian)
 source $ZSH/oh-my-zsh.sh
 
 # Rbenv
-eval "$(rbenv init -)"
 export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
