@@ -27,3 +27,4 @@ set go-=L
 let g:Powerline_symbols = 'fancy'
 set nowrap " Stupid wordwrap
 set number " Lines pls
+set guifont=Monaco\ for\ Powerline
