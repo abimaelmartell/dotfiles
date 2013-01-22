@@ -28,3 +28,4 @@ let g:Powerline_symbols = 'fancy'
 set nowrap " Stupid wordwrap
 set number " Lines pls
 set guifont=Monaco\ for\ Powerline
+set laststatus=2 " Status Bar
