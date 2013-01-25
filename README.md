@@ -13,6 +13,7 @@ Open a terminal and copy the following
 * `ln -s ~/.dotfiles/vim ~/.vim`
 * `ln -s ~/.dotfiles/vim/vimrc ~/.vimrc`
 * `ln -s ~/.dotfiles/fonts ~/.fonts`
+Also you need to rebuild the font cache
 
 if you are using zsh
 * `ln -s ~/.dotfiles/zshrc ~/.zshrc`
