@@ -14,11 +14,8 @@ map <leader>t :TagbarToggle<CR>
 
 
 " Color, font and other goodies
-set background=dark
 if has("gui_running")
-	colorscheme codeschool
-else
-	colorscheme solarized
+  colorscheme getafe
 endif
 let g:NERDTreeWinPos = "right"
 set guioptions-=T 
