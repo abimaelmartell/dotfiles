@@ -10,3 +10,6 @@ fliptable(){echo "(╯°□ °)╯︵ ┻━┻"}
 # Rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
+
+# Colors
+export TERM="xterm-256color"
