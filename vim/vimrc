@@ -1,9 +1,17 @@
-" Plugins init
-call pathogen#infect()
-syntax on
+set nocompatible
+filetype off
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" let Vundle manage Vundle
+Bundle 'gmarik/vundle'
+
+
+" 
+Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-rails.git'
+
 filetype plugin indent on
-syntax enable
-set runtimepath^=~/.vim/bundle/ctrlp.vim
 
 
 " Mappings
