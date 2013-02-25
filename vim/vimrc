@@ -1,9 +1,31 @@
-" Plugins init
-call pathogen#infect()
-syntax on
+set nocompatible
+filetype off
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" let Vundle manage Vundle
+Bundle 'gmarik/vundle'
+
+
+" 
+Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-rails.git'
+Bundle 'kien/ctrlp.vim'
+Bundle 'Raimondi/delimitMate'
+Bundle 'scrooloose/nerdtree'
+Bundle 'honza/snipmate-snippets'
+Bundle 'ervandew/supertab'
+Bundle 'scrooloose/syntastic'
+Bundle 'kchmck/vim-coffee-script'
+Bundle 'skammer/vim-css-color'
+Bundle 'larssmit/vim-getafe'
+Bundle 'Lokaltog/vim-powerline'
+Bundle 'garbas/vim-snipmate'
+Bundle "MarcWeber/vim-addon-mw-utils"
+Bundle "tomtom/tlib_vim"
+
+
 filetype plugin indent on
-syntax enable
-set runtimepath^=~/.vim/bundle/ctrlp.vim
 
 
 " Mappings
