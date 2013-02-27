@@ -21,8 +21,9 @@ Bundle 'skammer/vim-css-color'
 Bundle 'larssmit/vim-getafe'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'garbas/vim-snipmate'
-Bundle "MarcWeber/vim-addon-mw-utils"
-Bundle "tomtom/tlib_vim"
+Bundle 'MarcWeber/vim-addon-mw-utils'
+Bundle 'tomtom/tlib_vim'
+Bundle 'chriskempson/tomorrow-theme', {'rtp': 'vim/'}
 
 
 filetype plugin indent on
@@ -37,7 +38,7 @@ map <leader>t :TagbarToggle<CR>
 
 " Color, font and other goodies
 if has("gui_running")
-  colorscheme getafe
+  colorscheme Tomorrow-Night
 endif
 let g:NERDTreeWinPos = "right"
 set guioptions-=T 
