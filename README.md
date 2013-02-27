@@ -10,10 +10,10 @@ Open a terminal and copy the following
 * `cd ~/.dotfiles`
 * `git submodule init`
 * `git submodule update`
-* `vim +BundleInstall +qall`
 * `ln -s ~/.dotfiles/vim ~/.vim`
 * `ln -s ~/.dotfiles/vim/vimrc ~/.vimrc`
 * `ln -s ~/.dotfiles/fonts ~/.fonts`
 * `ln -s ~/.dotfiles/zshrc ~/.zshrc`
+* `vim +BundleInstall +qall`
 
 TODO: Add a installer, maybe use vundler
