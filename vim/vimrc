@@ -37,9 +37,7 @@ map <leader>t :TagbarToggle<CR>
 
 
 " Color, font and other goodies
-if has("gui_running")
-  colorscheme Tomorrow-Night
-endif
+colorscheme Tomorrow-Night
 let g:NERDTreeWinPos = "right"
 set guioptions-=T 
 set guioptions-=r
