@@ -1,7 +1,7 @@
 # Oh my zsh
 ZSH=$HOME/.oh-my-zsh
-ZSH_THEME="robbyrussell"
-plugins=(git rails ruby svn php github debian)
+ZSH_THEME="cloud"
+plugins=(git rails ruby svn php github debian nyan)
 source $ZSH/oh-my-zsh.sh
 
 # Custom aliases
