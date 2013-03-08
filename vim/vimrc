@@ -17,13 +17,13 @@ Bundle 'honza/snipmate-snippets'
 Bundle 'ervandew/supertab'
 Bundle 'scrooloose/syntastic'
 Bundle 'kchmck/vim-coffee-script'
-Bundle 'skammer/vim-css-color'
 Bundle 'larssmit/vim-getafe'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'garbas/vim-snipmate'
 Bundle 'MarcWeber/vim-addon-mw-utils'
 Bundle 'tomtom/tlib_vim'
 Bundle 'chriskempson/tomorrow-theme', {'rtp': 'vim/'}
+Bundle 'vim-ruby/vim-ruby'
 
 
 filetype plugin indent on
