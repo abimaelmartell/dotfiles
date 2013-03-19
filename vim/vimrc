@@ -7,7 +7,7 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 
-" 
+" le plugins
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-rails.git'
 Bundle 'kien/ctrlp.vim'
@@ -25,6 +25,7 @@ Bundle 'tomtom/tlib_vim'
 Bundle 'chriskempson/tomorrow-theme', {'rtp': 'vim/'}
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'ap/vim-css-color'
+Bundle 'matchit.zip'
 
 filetype plugin indent on
 
