@@ -26,6 +26,9 @@ Bundle 'chriskempson/tomorrow-theme', {'rtp': 'vim/'}
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'ap/vim-css-color'
 Bundle 'matchit.zip'
+Bundle 'lunaru/vim-twig'
+Bundle 'ciaranm/inkpot'
+Bundle 'altercation/vim-colors-solarized'
 
 filetype plugin indent on
 
@@ -36,16 +39,19 @@ map <leader>n :NERDTreeToggle<CR>
 let g:ctrlp_map = "<leader>p"
 map <leader>t :TagbarToggle<CR>
 
-
 " Color, font and other goodies
-colorscheme Tomorrow-Night
+if has('gui_running')
+	colorscheme solarized
+else
+	colorscheme Tomorrow-Night
+endif
 let g:NERDTreeWinPos = "right"
 set guioptions-=T 
 set guioptions-=r
 set go-=L
 let g:Powerline_symbols = 'fancy'
-set nowrap 				            " Stupid wordwrap
-set number 					    " Lines pls
+set nowrap					    " Stupid wordwrap
+set number					    " Lines pls
 set guifont=Monaco\ for\ Powerline
-set laststatus=2 				    " Status Bar
+set laststatus=2				    " Status Bar
 let g:ruby_path = system('echo $HOME/.rbenv/shims') " Set ruby path
