@@ -40,11 +40,7 @@ let g:ctrlp_map = "<leader>p"
 map <leader>t :TagbarToggle<CR>
 
 " Color, font and other goodies
-if has('gui_running')
-	colorscheme solarized
-else
-	colorscheme Tomorrow-Night
-endif
+colorscheme Tomorrow-Night
 let g:NERDTreeWinPos = "right"
 set guioptions-=T 
 set guioptions-=r
