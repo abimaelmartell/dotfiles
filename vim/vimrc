@@ -45,6 +45,7 @@ colorscheme Tomorrow-Night
 let g:NERDTreeWinPos = "right"
 set guioptions-=T 
 set guioptions-=r
+set guioptions-=m
 set go-=L
 let g:Powerline_symbols = 'fancy'
 set nowrap					    " Stupid wordwrap
