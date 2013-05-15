@@ -40,6 +40,7 @@ let g:ctrlp_map = "<leader>p"
 map <leader>t :TagbarToggle<CR>
 
 " Color, font and other goodies
+syntax on
 colorscheme Tomorrow-Night
 let g:NERDTreeWinPos = "right"
 set guioptions-=T 
