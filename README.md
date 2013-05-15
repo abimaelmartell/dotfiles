@@ -7,7 +7,7 @@ installation
 ------------
 Open a terminal and copy the following
 ```ssh
-git clone git@github.com:abimaelmartell/dotfiles.git ~/.dotfiles
+git clone https://github.com/abimaelmartell/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
 git submodule init
 git submodule update
