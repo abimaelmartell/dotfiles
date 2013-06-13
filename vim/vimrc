@@ -41,7 +41,12 @@ map <leader>t :TagbarToggle<CR>
 
 " Color, font and other goodies
 syntax on
-colorscheme Tomorrow-Night
+colorscheme solarized
+if has("gui_running")
+    set background=light
+else
+    set background=dark
+endif
 let g:NERDTreeWinPos = "right"
 set guioptions-=T 
 set guioptions-=r
