@@ -51,6 +51,9 @@ let g:Powerline_symbols = 'fancy'
 set nowrap					    " Stupid wordwrap
 set number					    " Lines pls
 set guifont=Monaco\ for\ Powerline
+if has("gui_macvim")
+	set guifont=Monaco:h13
+endif
 set laststatus=2				    " Status Bar
 let g:ruby_path = system('echo $HOME/.rbenv/shims') " Set ruby path
 
