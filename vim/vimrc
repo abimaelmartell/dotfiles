@@ -6,7 +6,6 @@ call vundle#rc()
 " let Vundle manage Vundle
 Bundle 'gmarik/vundle'
 
-
 " le plugins
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-rails.git'
@@ -30,8 +29,12 @@ Bundle 'lunaru/vim-twig'
 Bundle 'ciaranm/inkpot'
 Bundle 'altercation/vim-colors-solarized'
 
+" Indent
 filetype plugin indent on
-
+set smartindent
+set tabstop=4
+set shiftwidth=4
+set expandtab
 
 " Mappings
 let mapleader = ","
@@ -48,15 +51,16 @@ set guioptions-=r
 set guioptions-=m
 set go-=L
 let g:Powerline_symbols = 'fancy'
-set nowrap					    " Stupid wordwrap
-set number					    " Lines pls
+set nowrap
+set number
 set guifont=Monaco\ for\ Powerline
+set term=screen-256color
 if has("gui_macvim")
-	set guifont=Monaco:h13
+    set guifont=Monaco:h13
 endif
 set laststatus=2				    " Status Bar
 let g:ruby_path = system('echo $HOME/.rbenv/shims') " Set ruby path
+set nofoldenable
 
-
-" Custo Ignore for CTRLP
+" Custom Ignore for CTRLP
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git\|cache\|vendor'

@@ -1,6 +1,6 @@
 # Oh my zsh
 ZSH=$HOME/.oh-my-zsh
-ZSH_THEME="cloud"
+ZSH_THEME="robbyrussell"
 plugins=(git rails ruby svn php github debian nyan)
 source $ZSH/oh-my-zsh.sh
 
@@ -15,3 +15,6 @@ eval "$(rbenv init -)"
 
 # Colors
 export TERM="xterm-256color"
+
+# Load profile
+source ~/.profile
