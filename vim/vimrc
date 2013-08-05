@@ -55,8 +55,10 @@ set nowrap
 set number
 set guifont=Monaco\ for\ Powerline
 set term=screen-256color
-if has("gui_macvim")
+if has("gui_running")
     set guifont=Monaco:h13
+    colorscheme solarized
+    set background=light
 endif
 set laststatus=2				    " Status Bar
 let g:ruby_path = system('echo $HOME/.rbenv/shims') " Set ruby path

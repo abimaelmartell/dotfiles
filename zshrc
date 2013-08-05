@@ -15,6 +15,3 @@ eval "$(rbenv init -)"
 
 # Colors
 export TERM="xterm-256color"
-
-# Load profile
-source ~/.profile
