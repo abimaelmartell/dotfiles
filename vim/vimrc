@@ -42,27 +42,31 @@ map <leader>n :NERDTreeToggle<CR>
 let g:ctrlp_map = "<leader>p"
 map <leader>t :TagbarToggle<CR>
 
-" Color, font and other goodies
+" Color scheme
 syntax on
 colorscheme Tomorrow-Night
-let g:NERDTreeWinPos = "right"
+set guifont=Monaco\ for\ Powerline
+set term=xterm-256color
+if has("gui_macvim")
+    set guifont=Monaco:h13
+endif
+
+" Gui options
 set guioptions-=T 
 set guioptions-=r
 set guioptions-=m
 set go-=L
-let g:Powerline_symbols = 'fancy'
-set nowrap
-set number
-set guifont=Monaco\ for\ Powerline
-set term=screen-256color
-if has("gui_running")
-    set guifont=Monaco:h13
-    colorscheme solarized
-    set background=light
-endif
-set laststatus=2				    " Status Bar
-let g:ruby_path = system('echo $HOME/.rbenv/shims') " Set ruby path
+set laststatus=2
 set nofoldenable
 
-" Custom Ignore for CTRLP
+" Plugins settings
+let g:NERDTreeWinPos = "right"
+let g:Powerline_symbols = 'fancy'
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git\|cache\|vendor'
+
+" Editor settings
+set nowrap
+set number
+if has('mouse')
+    set mouse=a
+endif
