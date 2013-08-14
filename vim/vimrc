@@ -67,6 +67,3 @@ let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git\|cache\|vendor'
 " Editor settings
 set nowrap
 set number
-if has('mouse')
-    set mouse=a
-endif
