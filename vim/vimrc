@@ -46,7 +46,7 @@ map <leader>t :TagbarToggle<CR>
 syntax on
 colorscheme Tomorrow-Night
 set guifont=Monaco\ for\ Powerline
-set term=xterm-256color
+set term=screen-256color
 if has("gui_macvim")
     set guifont=Monaco:h13
 endif

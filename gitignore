@@ -2,3 +2,4 @@ config/database.yml
 *.swp
 *.swo
 .DS_STORE
+.sass-cache
