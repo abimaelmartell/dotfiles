@@ -9,9 +9,10 @@ fliptable(){echo "(╯°□ °)╯︵ ┻━┻"}
 
 alias phpserver='php -S localhost:3000'
 
+alias miip='curl http://wtfismyip.com/json'
+
 # Rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
-# Colors
-export TERM="screen-256color"
+export TERM=xterm-256color

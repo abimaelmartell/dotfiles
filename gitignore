@@ -1,3 +1,4 @@
+.svn
 config/database.yml
 *.swp
 *.swo
