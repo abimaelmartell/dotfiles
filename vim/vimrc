@@ -27,8 +27,12 @@ Bundle 'ap/vim-css-color'
 Bundle 'matchit.zip'
 Bundle 'lunaru/vim-twig'
 Bundle 'ciaranm/inkpot'
-Bundle 'altercation/vim-colors-solarized'
 Bundle 'majutsushi/tagbar'
+Bundle 'flazz/vim-colorschemes'
+Bundle 'junegunn/seoul256.vim'
+Bundle 'mustache/vim-mustache-handlebars'
+Bundle 'tpope/vim-haml'
+Bundle 'jnwhiteh/vim-golang'
 
 " Indent
 filetype plugin indent on
@@ -46,11 +50,11 @@ map <leader>t :TagbarToggle<CR>
 " Color scheme
 syntax on
 colorscheme Tomorrow-Night
-set guifont=Monaco\ for\ Powerline
+set guifont=Inconsolata
 
 if has("gui_macvim")
     colorscheme Tomorrow-Night
-    set guifont=Monaco:h13
+    set guifont=Inconsolata\ XL:h13
 endif
 
 " Gui options
