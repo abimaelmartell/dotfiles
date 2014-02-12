@@ -33,6 +33,7 @@ Bundle 'junegunn/seoul256.vim'
 Bundle 'mustache/vim-mustache-handlebars'
 Bundle 'tpope/vim-haml'
 Bundle 'jnwhiteh/vim-golang'
+Bundle 'groenewege/vim-less'
 
 " Indent
 filetype plugin indent on
@@ -49,12 +50,12 @@ map <leader>t :TagbarToggle<CR>
 
 " Color scheme
 syntax on
-colorscheme Tomorrow-Night
-set guifont=Inconsolata
+colorscheme solarized
+set background=light
+set guifont=Monaco
 
 if has("gui_macvim")
-    colorscheme Tomorrow-Night
-    set guifont=Inconsolata\ XL:h13
+    set guifont=Monaco:h12
 endif
 
 " Gui options
