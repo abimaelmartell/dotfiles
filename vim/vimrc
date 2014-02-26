@@ -8,28 +8,32 @@ Bundle 'gmarik/vundle'
 
 " le plugins
 Bundle 'tpope/vim-fugitive'
-Bundle 'tpope/vim-rails.git'
 Bundle 'kien/ctrlp.vim'
 Bundle 'Raimondi/delimitMate'
 Bundle 'scrooloose/nerdtree'
 Bundle 'honza/vim-snippets'
-Bundle 'ervandew/supertab'
+Bundle 'Valloric/YouCompleteMe'
 Bundle 'scrooloose/syntastic'
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'larssmit/vim-getafe'
-Bundle 'Lokaltog/vim-powerline'
+Bundle 'itchyny/lightline.vim'
 Bundle 'garbas/vim-snipmate'
 Bundle 'MarcWeber/vim-addon-mw-utils'
 Bundle 'tomtom/tlib_vim'
-Bundle 'chriskempson/tomorrow-theme', {'rtp': 'vim/'}
-Bundle 'vim-ruby/vim-ruby'
-Bundle 'ap/vim-css-color'
 Bundle 'matchit.zip'
-Bundle 'lunaru/vim-twig'
-Bundle 'ciaranm/inkpot'
 Bundle 'majutsushi/tagbar'
+Bundle 'chrisbra/Colorizer'
+
+"" Color schemes
+Bundle 'ciaranm/inkpot'
+Bundle 'larssmit/vim-getafe'
 Bundle 'flazz/vim-colorschemes'
 Bundle 'junegunn/seoul256.vim'
+Bundle 'chriskempson/tomorrow-theme', {'rtp': 'vim/'}
+
+"" Languages support
+Bundle 'vim-ruby/vim-ruby'
+Bundle 'kchmck/vim-coffee-script'
+Bundle 'tpope/vim-rails.git'
+Bundle 'lunaru/vim-twig'
 Bundle 'mustache/vim-mustache-handlebars'
 Bundle 'tpope/vim-haml'
 Bundle 'jnwhiteh/vim-golang'
@@ -50,12 +54,11 @@ map <leader>t :TagbarToggle<CR>
 
 " Color scheme
 syntax on
-colorscheme solarized
-set background=light
+colorscheme Tomorrow-Night
 set guifont=Monaco
 
 if has("gui_macvim")
-    set guifont=Monaco:h12
+    set guifont=Monaco:h14
 endif
 
 " Gui options
@@ -68,8 +71,7 @@ set nofoldenable
 
 " Plugins settings
 let g:NERDTreeWinPos = "right"
-let g:Powerline_symbols = 'fancy'
-let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git\|cache\|vendor'
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git\|cache\|/vendor'
 
 " Editor settings
 set nowrap
