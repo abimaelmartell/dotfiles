@@ -21,6 +21,7 @@ Bundle 'tomtom/tlib_vim'
 Bundle 'matchit.zip'
 Bundle 'majutsushi/tagbar'
 Bundle 'chrisbra/Colorizer'
+Bundle 'airblade/vim-gitgutter'
 
 "" Color schemes
 Bundle 'ciaranm/inkpot'
@@ -54,7 +55,7 @@ map <leader>t :TagbarToggle<CR>
 
 " Color scheme
 syntax on
-colorscheme Tomorrow-Night
+colorscheme Tomorrow
 set guifont=Monaco
 
 if has("gui_macvim")
