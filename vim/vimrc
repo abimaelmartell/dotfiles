@@ -39,6 +39,7 @@ Bundle 'mustache/vim-mustache-handlebars'
 Bundle 'tpope/vim-haml'
 Bundle 'jnwhiteh/vim-golang'
 Bundle 'groenewege/vim-less'
+Bundle 'othree/html5.vim'
 
 " Indent
 filetype plugin indent on
