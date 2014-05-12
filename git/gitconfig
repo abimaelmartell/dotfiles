@@ -1,0 +1,7 @@
+[core]
+	excludesfile = ~/.dotfiles/git/gitignore
+[user]
+	name = Abimael Martell
+	email = abimex@gmail.com
+[alias]
+	zip = "archive HEAD --format=zip"
