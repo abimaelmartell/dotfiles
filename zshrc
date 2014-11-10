@@ -20,3 +20,8 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
 export TERM=xterm-256color
+
+export PATH="$HOME/.bin:$PATH"
+
+export PATH="$PATH:/usr/local/lib/node_modules"
+source $(brew --prefix nvm)/nvm.sh
