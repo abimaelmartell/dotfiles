@@ -40,6 +40,9 @@ Bundle 'othree/html5.vim'
 Bundle 'plasticboy/vim-markdown'
 Bundle 'ap/vim-css-color'
 
+"" Support for editorconfig
+Bundle 'editorconfig/editorconfig-vim'
+
 " Indent
 filetype plugin indent on
 set smartindent
