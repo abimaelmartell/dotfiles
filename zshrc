@@ -1,7 +1,7 @@
 # Oh my zsh
 ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="cloud"
-plugins=(git rails ruby svn php debian nyan brew)
+plugins=(git rails ruby svn php debian nyan brew encode64)
 source $ZSH/oh-my-zsh.sh
 
 # Useful custom aliases
@@ -33,4 +33,3 @@ export TERM=xterm-256color
 export PATH="$HOME/.bin:$PATH"
 
 export PATH="$PATH:/usr/local/lib/node_modules"
-source $(brew --prefix nvm)/nvm.sh
