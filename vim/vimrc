@@ -88,3 +88,6 @@ if &term =~ '256color'
   " See also http://snk.tuxfamily.org/log/vim-256color-bce.html
   set t_ut=
 endif
+
+set listchars=tab:»·,trail:·
+set list
