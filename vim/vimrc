@@ -43,6 +43,14 @@ Bundle 'ap/vim-css-color'
 "" Support for editorconfig
 Bundle 'editorconfig/editorconfig-vim'
 
+"" Snippets
+Bundle "MarcWeber/vim-addon-mw-utils"
+Bundle "tomtom/tlib_vim"
+Bundle "garbas/vim-snipmate"
+
+" Optional:
+Bundle "honza/vim-snippets"
+
 " Indent
 filetype plugin indent on
 set smartindent
@@ -58,11 +66,11 @@ map <leader>t :TagbarToggle<CR>
 
 " Color scheme
 syntax on
-colorscheme Tomorrow-Night
+colorscheme Tomorrow
 set guifont=Monaco
 
 if has("gui_macvim")
-    set guifont=Monaco:h14
+    set guifont=Monaco:h18
 endif
 
 " Gui options
