@@ -1,7 +1,9 @@
 [core]
 	excludesfile = ~/.dotfiles/git/gitignore
+	editor = /usr/bin/vim
 [user]
 	name = Abimael Martell
 	email = abimex@gmail.com
+	signingkey = 7A51C22E
 [alias]
 	zip = "archive HEAD --format=zip"
