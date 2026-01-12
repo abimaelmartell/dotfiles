@@ -47,13 +47,6 @@ Bundle 'isRuslan/vim-es6'
 "" Support for editorconfig
 Bundle 'editorconfig/editorconfig-vim'
 
-"" Snippets
-Bundle "MarcWeber/vim-addon-mw-utils"
-Bundle "tomtom/tlib_vim"
-Bundle "garbas/vim-snipmate"
-Bundle "scrooloose/nerdcommenter"
-" Optional:
-Bundle "honza/vim-snippets"
 
 " Indent
 filetype plugin indent on

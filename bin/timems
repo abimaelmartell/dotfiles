@@ -1,0 +1,15 @@
+#!/usr/bin/env node
+
+const { spawnSync } = require("node:child_process");
+
+const start = process.hrtime.bigint();
+const result = spawnSync(process.argv[2], process.argv.slice(3), {
+  stdio: "inherit",
+});
+const end = process.hrtime.bigint();
+
+const ms = Number(end - start) / 1e6;
+console.log(`\nElapsed: ${ms.toFixed(2)} ms`);
+
+process.exit(result.status ?? 0);
+

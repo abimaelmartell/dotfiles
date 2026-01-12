@@ -1,38 +1,21 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
 # Oh my zsh
 ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="robbyrussell"
-plugins=(git rails ruby svn php debian nyan brew encode64)
+plugins=(git brew encode64 nvm)
 source $ZSH/oh-my-zsh.sh
-
-# Useful custom aliases
-alias fliptable='echo "(╯°□ °)╯︵ ┻━┻"'
-alias phpserver='php -S 0.0.0.0:3000'
-alias miip='curl http://wtfismyip.com/text'
-
-# create a gzipped tar from dir
-comprimemesta() {
-    tar -cvzf $1.tar.gz $1
-}
-
-# encode base64
-base64_encode() {
-    echo $1 | base64
-}
-
-# decode base64
-base64_decode() {
-    echo $1 | base64 -D
-}
-
-export PATH=/usr/local/bin:$PATH
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
 
 export TERM=xterm-256color
 
-export PATH="$HOME/.bin:$PATH"
+# Source configurations
+source "$HOME/.dotfiles/paths.zsh"
+source "$HOME/.dotfiles/aliases.zsh"
 
-# Go stuff
-export GOPATH="$HOME/Code/Go"
-export PATH=$PATH:$GOPATH/bin
-export PATH="$PATH:/usr/local/lib/node_modules"
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
