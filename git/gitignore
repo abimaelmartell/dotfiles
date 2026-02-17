@@ -5,3 +5,4 @@ config/database.yml
 .DS_STORE
 .sass-cache
 .DS_Store
+.claude
