@@ -19,15 +19,6 @@ export PATH=$PATH:$GOPATH/bin
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
-# Kiro shell integration
-[[ "$TERM_PROGRAM" == "kiro" ]] && . "$(kiro --locate-shell-integration-path zsh)"
-
-# opencode
-export PATH="$HOME/.opencode/bin:$PATH"
-
-# Windsurf
-export PATH="$HOME/.codeium/windsurf/bin:$PATH"
-
 # pnpm
 export PNPM_HOME="$HOME/Library/pnpm"
 case ":$PATH:" in
