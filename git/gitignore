@@ -1,8 +1,14 @@
-.svn
-config/database.yml
+# macOS metadata
+.DS_Store
+.DS_STORE
+._*
+
+# Editor swap and backup files
 *.swp
 *.swo
-.DS_STORE
-.sass-cache
-.DS_Store
-.claude
+*~
+
+# Machine-local tool settings
+.claude/settings.local.json
+mise.local.toml
+.mise.local.toml

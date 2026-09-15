@@ -1,9 +1,26 @@
-[core]
-	excludesfile = ~/.dotfiles/git/gitignore
-	editor = /usr/bin/vim
 [user]
 	name = Abimael Martell
-	email = abimex@gmail.com
-	signingkey = 7A51C22E
+	email = 1450169+abimaelmartell@users.noreply.github.com
+[core]
+	excludesFile = ~/.dotfiles/git/gitignore
+	editor = /usr/bin/vim
+[init]
+	defaultBranch = main
+[fetch]
+	prune = true
+[pull]
+	ff = only
+[push]
+	default = simple
+	autoSetupRemote = true
+[merge]
+	conflictStyle = zdiff3
+[diff]
+	colorMoved = zebra
+[color]
+	ui = auto
 [alias]
-	zip = "archive HEAD --format=zip"
+	st = status -sb
+	last = log -1 --stat
+	lg = log --graph --oneline --decorate -20
+	zip = archive HEAD --format=zip
