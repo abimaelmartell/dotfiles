@@ -1,31 +1,18 @@
-# PATH configurations and tool-specific setups
+# Shared PATH setup. Safe to source from login and interactive shells.
+typeset -U path
 
-# Basic PATH additions
-export PATH=/usr/local/bin:$PATH
-export PATH="$HOME/.bin:$PATH"
-export PATH="$PATH:/usr/local/lib/node_modules"
-export PATH="$PATH:$HOME/.dotfiles/bin"
+# Homebrew: Apple Silicon first, then Intel.
+for brew_bin in /opt/homebrew/bin/brew /usr/local/bin/brew; do
+  if [[ -x "$brew_bin" ]]; then
+    eval "$("$brew_bin" shellenv zsh)"
+    break
+  fi
+done
+unset brew_bin
 
-# rbenv
-# export PATH="$HOME/.rbenv/bin:$PATH"
-# eval "$(rbenv init -)"
-
-# Go
-export GOPATH="$HOME/Code/Go"
-export PATH=$PATH:$GOPATH/bin
-
-# bun
-[ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
-
-# pnpm
-export PNPM_HOME="$HOME/Library/pnpm"
-case ":$PATH:" in
-  *":$PNPM_HOME:"*) ;;
-  *) export PATH="$PNPM_HOME:$PATH" ;;
-esac
-# pnpm end
-
-# User-installed command-line tools
-export PATH="$HOME/.local/bin:$PATH"
+# Common user tools, Docker, and mise shims for non-interactive shells.
+for bin_dir in "$HOME/.bin" "$HOME/.dotfiles/bin" "$HOME/.docker/bin" \
+               "${MISE_DATA_DIR:-$HOME/.local/share/mise}/shims" "$HOME/.local/bin"; do
+  [[ -d "$bin_dir" ]] && path=("$bin_dir" $path)
+done
+unset bin_dir
