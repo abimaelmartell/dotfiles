@@ -12,7 +12,12 @@ setopt HIST_IGNORE_ALL_DUPS
 export PAGER="${PAGER:-less}"
 export LESS="${LESS:--R}"
 
-# Completion
+# Shared paths and optional laptop-specific overrides.
+source "$HOME/.dotfiles/paths.zsh"
+[[ -f "$HOME/.zshrc.local" ]] && source "$HOME/.zshrc.local"
+source "$HOME/.dotfiles/aliases.zsh"
+
+# Completion (after Homebrew and local additions to fpath).
 autoload -Uz compinit
 compinit -C
 
@@ -30,11 +35,7 @@ precmd() {
 setopt PROMPT_SUBST
 PROMPT='%F{cyan}%1~%f${vcs_info_msg_0_} %F{green}❯%f '
 
-# Personal configuration
-source "$HOME/.dotfiles/paths.zsh"
-source "$HOME/.dotfiles/aliases.zsh"
-
-# Portable runtime manager for Node, Erlang, Elixir, and future tools.
+# mise selects runtimes after all other PATH changes.
 if (( $+commands[mise] )); then
   eval "$(mise activate zsh)"
 fi
