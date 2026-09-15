@@ -14,11 +14,6 @@ export PATH="$PATH:$HOME/.dotfiles/bin"
 export GOPATH="$HOME/Code/Go"
 export PATH=$PATH:$GOPATH/bin
 
-# NVM
-export NVM_DIR="$HOME/.nvm"
-[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
-[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
-
 # bun
 [ -s "/Users/abimael/.bun/_bun" ] && source "/Users/abimael/.bun/_bun"
 export BUN_INSTALL="$HOME/.bun"
@@ -40,3 +35,6 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+
+# User-installed command-line tools
+export PATH="$HOME/.local/bin:$PATH"
